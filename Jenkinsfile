@@ -32,7 +32,7 @@ stage('push to docker hub'){
   steps {
     script {
       docker.withRegistry('https://index.docker.io/v1', DOCKER_CREDENTIALS_ID) {
-        docker.image(DOCKER_IMAGE).push
+        docker.image(DOCKER_IMAGE).push()
       }
     }
   }
@@ -40,6 +40,6 @@ stage('push to docker hub'){
 post {
   failure {
     echo "Build or test failed"
-}
-} 
+    }
+  } 
 }
