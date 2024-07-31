@@ -24,5 +24,5 @@ jobs:
               with:
                  push: true
                  tags: |
-                  YevhenTrambai/web-sql:latest
-                  YevhenTrambai/web-sql:${{ github.sha }}
+                   yevhent/web-sql:latest
+                   yevhent/web-sql:${{ github.sha }}
