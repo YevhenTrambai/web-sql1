@@ -17,4 +17,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Run some tests
+<<<<<<< HEAD
         run: echo "Run some tests" 
+=======
+        run: echo "Run some tests"   
+>>>>>>> 006b29cb5f266f8887314e4695dfc6e4060cf76f
